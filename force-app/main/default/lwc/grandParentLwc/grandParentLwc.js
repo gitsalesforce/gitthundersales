@@ -1,41 +1,16 @@
-import {
-    LightningElement,
-    api,track,
-    wire
-} from 'lwc';
-import {
-    getRecord
-} from 'lightning/uiRecordApi';
-
-const fields = [
-    'Contact.Name',
-    'Contact.Title',
-    'Contact.Phone',
-    'Contact.Email',
-];
+import { LightningElement, api } from 'lwc';
 
 export default class GrandParentLwc extends LightningElement {
-    @api recordId;
-@track contact;
-    @wire(getRecord, {
-        recordId: '$recordId',
-        fields
-    })
-    contact;
-
-    get name() {
-        return this.contact.data.fields.Name.value;
+    handleSuccess(event) {
+        console.log('onsuccess event recordEditForm',event.detail.id)
     }
-
-    get title() {
-        return this.contact.data.fields.Title.value;
+    handleSubmit(event) {
+        console.log('onsubmit event recordEditForm'+ event.detail.fields);
     }
-
-    get phone() {
-        return this.contact.data.fields.Phone.value;
+    handleSuccess1(event) {
+        console.log('onsuccess event recordEditForm',event.detail.id)
     }
-
-    get email() {
-        return this.contact.data.fields.Email.value;
+    handleSubmit1(event) {
+        console.log('onsubmit event recordEditForm'+ event.detail.fields);
     }
 }
