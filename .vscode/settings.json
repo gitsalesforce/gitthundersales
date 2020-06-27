@@ -6,7 +6,8 @@
   },
   "salesforcedx-vscode-core.show-cli-success-msg": false,
   "editor.fontSize": 11,
-  "terminal.integrated.fontSize": 12,
   "gitHistory.logLevel": "Debug",
-  "files.autoSave": "onFocusChange"
+  "files.autoSave": "onFocusChange",
+  "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.automationShell.windows": ""
 }
