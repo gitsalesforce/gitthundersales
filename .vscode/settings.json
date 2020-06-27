@@ -5,7 +5,8 @@
     "**/.sfdx": true
   },
   "salesforcedx-vscode-core.show-cli-success-msg": false,
-  "editor.fontSize": 12,
+  "editor.fontSize": 11,
   "terminal.integrated.fontSize": 12,
-  "gitHistory.logLevel": "Debug"
+  "gitHistory.logLevel": "Debug",
+  "files.autoSave": "onFocusChange"
 }
