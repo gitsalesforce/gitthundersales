@@ -1,0 +1,9 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page
+  <!-- End Default Content REMOVE THIS -->
+   <apex:canvasApp developerName="Test_Standard_Visualforce" 
+        namespacePrefix="testorg" height="1000px" width="800px" 
+        parameters="{p1:'value1',p2:'value2',p3:'value3'}"/>
+</apex:page>
